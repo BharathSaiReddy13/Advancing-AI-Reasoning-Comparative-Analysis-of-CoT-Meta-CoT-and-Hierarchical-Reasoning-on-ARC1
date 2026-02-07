@@ -1,0 +1,9 @@
+{
+  "name": "ExecuTorch-Tauri-Dev",
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "features": {
+    "ghcr.io/devcontainers/features/rust:1": {},
+    "ghcr.io/devcontainers/features/node-js:1": {}
+  },
+  "postCreateCommand": "pip install executorch torch torchtune transformers && npm install -g @tauri-apps/cli"
+}
